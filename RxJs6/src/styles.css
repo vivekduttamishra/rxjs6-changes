@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+.margin-10{
+  margin: 10%;
+}
+
+.margin{
+  margin: 5%;
+}
+
+.fixed-size-button{
+  margin: 5px;
+  width:100px;
+  height:40px;
+}
+
+footer{
+  border-top:2px solid gray;
+  margin-top:10px;
+  text-align: center
+}
+
+.form-field{
+  clear:both;
+  width:80%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin:5px;
+  box-shadow: 2px 2px 2px solid black;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+input  .ng-invalid {
+  border-right: 5px solid lightpink;
+}
+
+input  .ng-valid{
+  background: 5px solid  lightgreen;
+}
+
+/*
+.form-field .ng-pristine .ng-valid{
+  background: lightyellow;
+}
+
+.form-field .ng-pristine .ng-invalid{
+  background: lightcoral;
+}*/

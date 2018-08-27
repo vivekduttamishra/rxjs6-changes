@@ -1,0 +1,58 @@
+<div class='margin-10'>
+
+  <h1>Best Movies...</h1>
+
+    <div id="row">
+      <input
+            type="button"
+            value="Http Refresh"
+            class="btn btn-sm btn-primary fixed-size-button"
+            (click)='httpRefresh()'
+            >
+      <input
+            type="button"
+            value="Rx Refresh"
+            class="btn btn-sm btn-primary fixed-size-button"
+            (click)="rxRefresh()"
+            >
+
+      <input
+            type="button"
+            value="Clear"
+            class="btn btn-sm btn-danger fixed-size-button"
+            (click)='clear()'
+            >
+    </div>
+
+
+
+    <table class='table table-condensed table-striped table-hover table-inverse' >
+      <thead>
+        <tr>
+          <th>Poster</th>
+          <th>Title</th>
+          <th>Imdb Rating</th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let movie of movies "    >
+          <td  >
+            <img src ='{{movie.Poster}}'
+                 width='20%'
+            />
+          </td>
+          <td>{{movie.Title}}</td>
+          <td>{{movie.imdbRating}}</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+    <p caHighlight >Total Movies : {{movies.length}}</p>
+
+
+</div>
+
